@@ -1,0 +1,7 @@
+$bgColor: #282c34;
+$secondaryColor: saturate(
+  $color: $bgColor,
+  $amount: 20%,
+);
+$textColor: #fff;
+$linkHover: #999;

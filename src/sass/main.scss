@@ -1,0 +1,58 @@
+@import 'color';
+@import 'mixin';
+
+body {
+  margin: 0;
+  background-image: url('../images/bg.png');
+  background-size: 20%;
+  color: $textColor;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  border: {
+    left: 1px dotted white;
+    right: 1px dotted white;
+  }
+  background-color: $bgColor;
+  padding: 0 30px;
+  align-content: center;
+}
+
+aside {
+  width: max-content;
+  margin: 0 auto;
+  background-color: $secondaryColor;
+  border: 4px ridge white;
+  height: min-content;
+  padding: {
+    top: 10px;
+    right: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  section {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  aside {
+    width: 30%;
+    margin-right: 3%;
+  }
+}
+article {
+  width: 65%;
+  right: 100px;
+  margin: auto;
+  text-indent: 30px;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+h1 {
+  @include resetSpacing;
+  text-align: center;
+  padding: 20px 0;
+}

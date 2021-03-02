@@ -1,0 +1,19 @@
+@import 'color';
+@import 'mixin';
+
+footer {
+  background-color: $secondaryColor;
+  height: 10%;
+  text-align: center;
+  color: $textColor;
+  padding: 20px 60px;
+  a:hover {
+    color: $linkHover;
+  }
+  font-weight: 450;
+
+  p {
+    font-size: 12px;
+    @include resetSpacing;
+  }
+}
