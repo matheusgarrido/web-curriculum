@@ -1,0 +1,29 @@
+@import 'mixin';
+@import 'color';
+
+main {
+  text-align: center;
+  padding-bottom: 30px;
+  a {
+    color: $textColor;
+    text-align: center;
+    text-decoration: underline;
+    &:hover {
+      color: $linkHover;
+    }
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  @include resetSpacing;
+  margin-top: 20px;
+}
+
+#errorImage {
+  display: block;
+  margin: 0 auto 70px;
+  width: 150px;
+  height: 50px;
+}
