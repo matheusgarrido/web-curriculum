@@ -73,11 +73,13 @@ h2 {
     position: relative;
   }
   aside {
-    width: 30%;
+    width: 20%;
     margin-right: 3%;
+    position: fixed;
   }
   article {
-    width: 65%;
+    width: 90%;
+    padding-left: 25%;
   }
   h2 {
     text-align: left;
