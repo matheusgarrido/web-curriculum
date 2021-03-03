@@ -1,6 +1,8 @@
 @import 'color';
 @import 'mixin';
 
+$indentSpace: 30px;
+
 body {
   margin: 0;
   background-image: url('../images/bg.png');
@@ -22,7 +24,7 @@ main {
 
 aside {
   width: max-content;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   background-color: $secondaryColor;
   border: 4px ridge white;
   height: min-content;
@@ -30,8 +32,40 @@ aside {
     top: 10px;
     right: 30px;
   }
+  a {
+    color: $textColor;
+    &:hover {
+      color: $linkHover;
+    }
+  }
+  li {
+    list-style-type: upper-roman;
+  }
 }
 
+article {
+  right: 100px;
+  margin: auto;
+  p {
+    text-indent: $indentSpace;
+    text-align: justify;
+  }
+  padding-bottom: 20px;
+  div {
+    margin-bottom: 50px;
+  }
+}
+h1 {
+  @include resetSpacing;
+  text-align: center;
+  padding: 30px 0;
+}
+h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+//Computer
 @media (min-width: 1200px) {
   section {
     display: flex;
@@ -42,17 +76,11 @@ aside {
     width: 30%;
     margin-right: 3%;
   }
-}
-article {
-  width: 65%;
-  right: 100px;
-  margin: auto;
-  text-indent: 30px;
-  text-align: justify;
-  padding-bottom: 20px;
-}
-h1 {
-  @include resetSpacing;
-  text-align: center;
-  padding: 20px 0;
+  article {
+    width: 65%;
+  }
+  h2 {
+    text-align: left;
+    text-indent: $indentSpace;
+  }
 }

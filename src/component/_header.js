@@ -1,15 +1,16 @@
 import React from 'react';
 import '../css/header.css';
+import { Link } from 'react-router-dom';
 
 export default function _header() {
   return (
     <header>
-      <nav class="navbar navbar-expand-sm">
-        <a class="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-sm">
+        <a className="navbar-brand" href="#">
           Teste
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -17,29 +18,29 @@ export default function _header() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Resumo <span class="sr-only">(current)</span>
-              </a>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item active">
+              <Link to="/" className="nav-link">
+                Home
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <Link to="/formacao" className="nav-link">
                 Formação
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <Link to="/cursos" className="nav-link">
                 Cursos
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">
+            <li className="nav-item">
+              <Link to="/contato" className="nav-link">
                 Contato
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
