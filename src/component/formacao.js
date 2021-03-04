@@ -4,7 +4,7 @@ import Footer from './_footer.js';
 import Main from './_main.js';
 
 //App
-export default function Home() {
+export default function Home({ title }) {
   const content = {
     title: 'Formação',
     content: [
@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Main content={content} />
+      <Main content={content} title={title} />
       <Footer />
     </>
   );

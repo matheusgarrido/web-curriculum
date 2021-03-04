@@ -15,5 +15,6 @@ footer {
   p {
     font-size: 12px;
     @include resetSpacing;
+    text-align: center;
   }
 }

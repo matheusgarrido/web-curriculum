@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../css/main.css';
 
-export default function _main({ content }) {
+export default function _main({ content, title }) {
+  document.title = title;
   const AsidePrefixLink = 'text';
 
   const [asideList, setAsideList] = useState(null);

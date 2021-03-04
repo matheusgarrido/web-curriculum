@@ -1,4 +1,6 @@
 @mixin resetSpacing {
   margin: 0;
   padding: 0;
+  text-indent: 0;
+  text-align: left;
 }

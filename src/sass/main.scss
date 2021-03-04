@@ -32,14 +32,13 @@ aside {
     top: 10px;
     right: 30px;
   }
-  a {
+  li {
+    @include resetSpacing;
+    list-style-type: upper-roman;
     color: $textColor;
     &:hover {
       color: $linkHover;
     }
-  }
-  li {
-    list-style-type: upper-roman;
   }
 }
 
@@ -58,7 +57,7 @@ article {
 h1 {
   @include resetSpacing;
   text-align: center;
-  padding: 30px 0;
+  padding: 110px 0 50px;
 }
 h2 {
   text-align: center;
