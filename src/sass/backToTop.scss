@@ -2,6 +2,8 @@
 
 #btnBackToTop {
   position: fixed;
+  right: 30px;
+  bottom: 30px;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -9,12 +11,28 @@
   background-color: $secondaryColor;
   border: 2px solid white;
   border-radius: 200px;
-  bottom: 30px;
-  right: 30px;
-  &:hover {
-    cursor: progress;
-  }
   i {
     font-size: 40px;
+  }
+
+  #tooltipButton {
+    position: fixed;
+    width: 80px;
+    right: 15px;
+    bottom: 90px;
+    text-align: center;
+    font-size: 14px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 20px;
+    display: none;
+  }
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    #tooltipButton {
+      display: block;
+    }
   }
 }
