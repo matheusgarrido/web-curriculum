@@ -5,16 +5,25 @@ footer {
   background-color: $secondaryColor;
   height: 10%;
   text-align: center;
-  color: $textColor;
+  color: $secondaryTextColor;
   padding: 20px 60px;
+  font-weight: 450;
   a:hover {
     color: $linkHover;
   }
-  font-weight: 450;
-
   p {
-    font-size: 12px;
+    font-size: 14px;
     @include resetSpacing;
     text-align: center;
+  }
+}
+
+.dark {
+  footer {
+    background-color: $secondaryColorDark;
+    color: $textColorDark;
+    a:hover {
+      color: $linkHoverDark;
+    }
   }
 }

@@ -10,7 +10,7 @@ export default function BackToTop() {
   }
   return (
     <div id="btnBackToTop" onClick={returnToTop}>
-      <p id="tooltipButton">Voltar para o topo</p>
+      <p id="tooltipBackToTop">Voltar para o topo</p>
       <i class="fa fa-angle-up" aria-hidden="true"></i>
     </div>
   );

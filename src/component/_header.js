@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/header.css';
 import { Link } from 'react-router-dom';
+import ChangeThemeButton from './changeThemeButton';
 
 export default function _header() {
   return (
@@ -45,6 +46,7 @@ export default function _header() {
           </ul>
         </div>
       </nav>
+      <ChangeThemeButton />
     </header>
   );
 }

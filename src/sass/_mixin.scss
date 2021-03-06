@@ -1,6 +1,20 @@
+@import 'color';
+
 @mixin resetSpacing {
   margin: 0;
   padding: 0;
   text-indent: 0;
   text-align: left;
+}
+
+@mixin tooltips {
+  position: fixed;
+  width: 80px;
+  text-align: center;
+  font-size: 14px;
+  background-color: $bgTool;
+  padding: 5px;
+  border-radius: 10px;
+  display: none;
+  color: $secondaryTextColor;
 }

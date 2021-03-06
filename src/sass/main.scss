@@ -18,15 +18,15 @@ main {
     right: 1px dotted white;
   }
   background-color: $bgColor;
-  padding: 0 30px;
-  align-content: center;
+  padding: 20px 30px 50px;
 }
 
 aside {
   width: max-content;
   margin: 0 auto 30px;
-  background-color: $secondaryColor;
-  border: 4px ridge white;
+  background-color: $asideBg;
+  border: 4px ridge $asideBorder;
+  border-radius: 10px;
   height: min-content;
   padding: {
     top: 10px;
@@ -36,8 +36,16 @@ aside {
     @include resetSpacing;
     list-style-type: upper-roman;
     color: $textColor;
+    font-weight: bold;
+    width: max-content;
+    a {
+      color: $textColor;
+    }
     &:hover {
       color: $linkHover;
+      a {
+        color: $linkHover;
+      }
     }
   }
 }
@@ -49,15 +57,17 @@ article {
     text-indent: $indentSpace;
     text-align: justify;
   }
-  padding-bottom: 20px;
   div {
     margin-bottom: 50px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 h1 {
   @include resetSpacing;
   text-align: center;
-  padding: 110px 0 50px;
+  padding: 70px 0 50px;
 }
 h2 {
   text-align: center;
@@ -77,11 +87,40 @@ h2 {
     position: fixed;
   }
   article {
-    width: 90%;
-    padding-left: 25%;
+    width: 70%;
+    margin-right: 0;
+    right: 10px;
+    padding: 0 3%;
+    border-left: 1px solid $asideBorder;
   }
   h2 {
     text-align: left;
     text-indent: $indentSpace;
+  }
+  .dark article {
+    border-left: 1px solid $asideBorderDark;
+  }
+}
+
+.dark {
+  main {
+    color: $textColorDark;
+    background-color: $bgColorDark;
+  }
+  aside {
+    background-color: $asideBgDark;
+    border-color: $asideBorderDark;
+    li {
+      color: $secondaryTextColorDark;
+      a {
+        color: $textColorDark;
+      }
+      &:hover {
+        color: $linkHoverDark;
+        a {
+          color: $linkHoverDark;
+        }
+      }
+    }
   }
 }

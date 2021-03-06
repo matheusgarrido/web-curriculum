@@ -1,8 +1,26 @@
-$bgColor: #282c34;
-$secondaryColor: saturate(
-  $color: $bgColor,
+//Default Theme
+$bgColor: #fff;
+$secondaryColor: #1f293d;
+$textColor: #000;
+$secondaryTextColor: #fff;
+$linkHover: #999;
+$asideBorder: #000;
+$asideBg: #eee;
+$bgTool: #000;
+$borderButton: #fff;
+$bgButtonTheme: #999;
+
+//Dark Theme
+$bgColorDark: #282c34;
+$secondaryColorDark: saturate(
+  $color: $bgColorDark,
   $amount: 20%,
 );
-$textColor: #fff;
-$linkHover: #999;
-$bgTool: #000;
+$textColorDark: #fff;
+$secondaryTextColorDark: #fff;
+$linkHoverDark: #999;
+$asideBorderDark: #fff;
+$asideBgDark: $secondaryColorDark;
+$bgToolDark: #000;
+$borderButtonDark: #fff;
+$bgButtonThemeDark: #2196f3;

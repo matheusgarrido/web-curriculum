@@ -1,4 +1,5 @@
 @import './color';
+@import './mixin';
 
 #btnBackToTop {
   position: fixed;
@@ -9,30 +10,30 @@
   text-align: center;
   vertical-align: middle;
   background-color: $secondaryColor;
-  border: 2px solid white;
+  border: 2px solid $borderButton;
   border-radius: 200px;
   i {
     font-size: 40px;
   }
 
-  #tooltipButton {
-    position: fixed;
-    width: 80px;
+  #tooltipBackToTop {
+    @include tooltips;
     right: 15px;
     bottom: 90px;
-    text-align: center;
-    font-size: 14px;
-    background-color: $bgTool;
-    padding: 5px;
-    border-radius: 10px;
-    display: none;
   }
 
   &:hover,
   &:active {
     cursor: pointer;
-    #tooltipButton {
+    #tooltipBackToTop {
       display: block;
     }
+  }
+}
+
+.dark {
+  #btnBackToTop {
+    background-color: $secondaryColorDark;
+    border-color: $borderButtonDark;
   }
 }

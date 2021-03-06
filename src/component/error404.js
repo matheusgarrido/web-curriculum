@@ -10,7 +10,7 @@ export default function Error404({ title }) {
   return (
     <>
       <Header />
-      <main>
+      <main id="errorScreen">
         <h1>Página não encontrada</h1>
         <div id="errorFace">
           <h2 id="error404">Error 4 0 4</h2>
